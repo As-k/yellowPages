@@ -15,6 +15,10 @@ public class ShopListsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_lists);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        String titel = getIntent().getStringExtra("title");
+        getSupportActionBar().setTitle(titel);
+
         shopListRecycler = findViewById(R.id.shop_list_recycler_view);
         shopListRecycler.setLayoutManager(new LinearLayoutManager(this));
         ShopListRecyclerAdapter adapter = new ShopListRecyclerAdapter(this);

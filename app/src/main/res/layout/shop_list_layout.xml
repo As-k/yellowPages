@@ -6,7 +6,7 @@
     android:layout_marginTop="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginLeft="5dp"
-    app:cardBackgroundColor="#e9e9e9"
+    app:cardBackgroundColor="#ffffff"
     app:cardElevation="2dp"
     app:cardCornerRadius="1dp"
     app:cardUseCompatPadding="true"
@@ -14,6 +14,9 @@
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/shop_layout"
+        style="?android:animateOnClick"
+        android:background="?android:attr/selectableItemBackground"
         android:orientation="vertical">
 
         <LinearLayout android:layout_width="match_parent"

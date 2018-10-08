@@ -1,11 +1,13 @@
 package com.aks.yellowpages;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class ShopListRecyclerAdapter extends RecyclerView.Adapter<ShopListRecyclerAdapter.ShopViewHolder> {
 
@@ -24,8 +26,13 @@ public class ShopListRecyclerAdapter extends RecyclerView.Adapter<ShopListRecycl
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ShopViewHolder shopViewHolder, int i) {
-
+    public void onBindViewHolder(@NonNull ShopViewHolder holder, int i) {
+        holder.shopCardLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mContext.startActivity(new Intent(mContext, ShopProfileActivity.class));
+            }
+        });
     }
 
     @Override
@@ -34,8 +41,11 @@ public class ShopListRecyclerAdapter extends RecyclerView.Adapter<ShopListRecycl
     }
 
     public class ShopViewHolder extends RecyclerView.ViewHolder {
+        LinearLayout shopCardLayout;
+
         public ShopViewHolder(@NonNull View itemView) {
             super(itemView);
+            shopCardLayout = itemView.findViewById(R.id.shop_layout);
         }
     }
 }

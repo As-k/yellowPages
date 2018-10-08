@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10dp"
+    tools:context=".ShopProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shop_name"
+        android:text="Shanmukha Restaurant Jayanagar"
+        android:textStyle="bold"
+        android:padding="@dimen/padding_5dp"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        />
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:padding="@dimen/padding_5dp">
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_details"
+            android:text="Fresh, standard family Indian restaurant serving biryanis, curries and tandooris."
+            android:padding="@dimen/padding_5dp"
+            android:textSize="@dimen/text_size_xmedium"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_address"
+            android:text="Address: 1313, Near Bangalore Central Mall, 25th Main, 9th Block, Jayanagar, Bengaluru, Karnataka 560069"
+            android:padding="@dimen/padding_5dp"
+            android:textSize="@dimen/text_size_xmedium"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_phone_no"
+            android:text="Phone: 080 4174 5566"
+            android:padding="@dimen/padding_5dp"
+            android:textSize="@dimen/text_size_xmedium"
+            android:textColor="@color/text_color"
+            />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:animateOnClick"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="@dimen/padding_5dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:animateOnClick"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="@dimen/padding_5dp"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <ImageView
+                android:id="@+id/direction"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:animateOnClick"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="@dimen/padding_5dp"
+                android:src="@drawable/ic_directions_black_24dp" />
+
+            <ImageView
+                android:id="@+id/web_site"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:animateOnClick"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="@dimen/padding_5dp"
+                android:src="@drawable/ic_public_black_24dp" />
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:animateOnClick"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="@dimen/padding_5dp"
+                android:src="@drawable/ic_person_add_black_24dp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

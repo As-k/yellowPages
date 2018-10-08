@@ -52,48 +52,55 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "Restaurant", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Restaurant"));
             }
                         });
         hotelLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "Hotel", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Hotel"));
             }
         });
         doctorLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "Doctor", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                .putExtra("title", "Doctor"));
             }
         });
         salonLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Salon"));
                 Toast.makeText(context, "Salon", Toast.LENGTH_SHORT).show();
             }
         });
         autoMechanicLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Auto Mechanic"));
                 Toast.makeText(context, "Auto Mechanic", Toast.LENGTH_SHORT).show();
             }
         });
         movieTheaterLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Movie Theater"));
                 Toast.makeText(context, "Movie Theater", Toast.LENGTH_SHORT).show();
             }
         });
         schoolLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "School"));
                 Toast.makeText(context, "School", Toast.LENGTH_SHORT).show();
             }
         });
@@ -101,13 +108,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "Travel", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Travel"));
             }
         });
         plumberLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(context, ShopListsActivity.class));
+                startActivity(new Intent(context, ShopListsActivity.class)
+                        .putExtra("title", "Plumber"));
                 Toast.makeText(context, "Plumber", Toast.LENGTH_SHORT).show();
             }
         });
